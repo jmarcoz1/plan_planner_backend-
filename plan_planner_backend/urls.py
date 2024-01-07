@@ -23,6 +23,6 @@ router = DefaultRouter()
 router.register(r'activities', ActivityViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('api/', include(router.urls)),
     path('admin/', admin.site.urls),
 ]
